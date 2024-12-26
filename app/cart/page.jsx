@@ -3,6 +3,7 @@ import React from "react";
 import LayoutCart from "../components/layout/LayoutCart";
 import CartHeader from "../components/CartHeader";
 import { Button } from "@material-tailwind/react";
+import Image from 'next/image';
 const page = () => {
   return (
     <LayoutCart>
@@ -37,9 +38,11 @@ const page = () => {
               <tbody>
                 <tr className="border-b">
                   <td className="py-4 flex items-center">
-                    <img
+                    <Image
                       src="https://via.placeholder.com/80"
                       alt="Product Image"
+                      width={80}
+                      height={80}
                       className="w-20 h-20 rounded-lg mr-4"
                     />
                     <div>
@@ -119,9 +122,11 @@ const page = () => {
 
         <div className="flex items-center justify-between border-b pb-4">
           <div className="flex items-center">
-            <img
+            <Image
               src="https://via.placeholder.com/120x150" // صورة المنتج
               alt="Product"
+              width={120}
+              height={150}
               className="w-28 h-auto object-cover rounded-md"
             />
             <div className="ml-4">

@@ -47,6 +47,8 @@ const ChatModal = () => {
               Welcome to our chat! Let us know what you're looking for.
             </div>
 
+            <p>Here&apos;s the message content.</p>
+
             {/* فورم الشات */}
             <form onSubmit={handleSubmit} className="space-y-2">
               <textarea

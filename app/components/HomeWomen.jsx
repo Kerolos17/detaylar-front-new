@@ -8,6 +8,8 @@ import { Button } from "@material-tailwind/react";
 import Banner from "./homeComponents/Banner";
 import ImagesSlider from "./homeComponents/ImagesSlider";
 import TwoCards from "./homeComponents/TwoCards";
+import Link from "next/link";
+
 const HomeWomen = () => {
   return (
     <div className="w-full mt-[15em]">
@@ -52,6 +54,8 @@ const HomeWomen = () => {
       <GitTheLook />
       <GiftCard />
       <Aboutus />
+      <p>It&apos;s a great day!</p>
+      <p>Don&apos;t miss out!</p>
     </div>
   );
 };
