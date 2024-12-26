@@ -24,10 +24,11 @@ const GiftCard = () => {
             <span className="text-[#686868] text-md mb-2">200 KD</span>
             <div className="flex flex-col gap-2 justify-center items-center px-3 mt-4 border-2 border-[#EEEEEE] p-5">
               <div className="flex gap-3">
-                <img
+                <Image
                   src="https://shapp.thahab.com/storage/eta/icons/R1J8bfkEGfugobwwv7Zqg0Ok6L4zTlyUyNWz0DzY.jpg"
                   alt="plane"
-                  className="w-[60px]"
+                  width={60}
+                  height={60}
                 />
                 <span className="text-[#666666]">Shipped within 4 days</span>
               </div>

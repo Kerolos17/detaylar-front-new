@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { getClollections } from "../redux-system/slices/collectionsSlice";
 
-const page = () => {
+function Page() {
   const { collections } = useSelector((state) => state.collectionData);
   // console.log(collections?.men);
 
@@ -20,7 +20,7 @@ const page = () => {
 
   useEffect(() => {
     dispatch(getClollections());
-  }, []);
+  }, [dispatch]);
 
 
   return (
@@ -125,4 +125,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -176,7 +176,7 @@ const Header = () => {
 
   useEffect(() => {
     dispatch(getHeaderCategories());
-  }, []);
+  }, [dispatch]);
 
   // console.log(categories?.data?.categories);
 
@@ -363,7 +363,7 @@ const Header = () => {
 
             {/* nav links */}
             <div className="flex flex-col justify-center items-center">
-              <Image width={40} height={40} src={`/assets/images/logo.png`} />
+              <Image width={40} height={40} src={`/assets/images/logo.png`} alt="Logo" />
               <h1 className="tracking-[.5em] font-[600] text-[30px]">
                 DETAYLAR
               </h1>
@@ -474,10 +474,10 @@ const Header = () => {
                     <h1 className="font-bold">Love It? Add to My Wishlist</h1>
                     <p>
                       My Wishlist allows you to keep track of all of your
-                      favorites and shopping activity whether you're on your
-                      computer, phone, or tablet. You won't have to waste time
+                      favorites and shopping activity whether you&apos;re on your
+                      computer, phone, or tablet. You won&apos;t have to waste time
                       searching all over again for that item you loved on your
-                      phone the other day - it's all here in one place!
+                      phone the other day - it&apos;s all here in one place!
                     </p>
                     <Button className="bg-[#434655]">Continue Shopping</Button>
                   </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from 'next/image';
 
 const Cards = ({products}) => {
   console.log(products);
@@ -17,14 +18,18 @@ const Cards = ({products}) => {
             className="card w-[180px] md:w-[350px] lg:w-[230px] bg-white shadow-none rounded-lg"
           >
             <div className="relative h-64">
-              <img
+              <Image
                 src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/${card.image}`}
                 alt="Shoe 1"
+                width={500}
+                height={300}
                 className="w-full h-full object-cover rounded-t-lg"
               />
-              {/* <img
+              {/* <Image
                 src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/${card.product_image[0]?.image.replace(/ /g, "%20")}`}
                 alt="Shoe 1 Hover"
+                width={500}
+                height={300}
                 className="w-full h-full object-cover rounded-t-lg opacity-0 hover:opacity-100 absolute top-0 left-0 transition-opacity duration-300"
               /> */}
             </div>

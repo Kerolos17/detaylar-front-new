@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-
+import Image from 'next/image';
 
 const languages = [
   {
@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-3">
               <Typography as="li" className="font-normal">
                 <p className="inline-block py-1 pr-2 transition-transform hover:scale-105 text-[#5C5C61]">
-                  The most coveted drops of the world's best brands and
+                  The most coveted drops of the world&apos;s best brands and
                   boutiques.
                 </p>
               </Typography>
@@ -50,13 +50,13 @@ const Footer = () => {
                   href="https://apps.apple.com/us/app/thahab-luxury-shopping/id1471324539"
                   target="_blank"
                 >
-                  <img src="https://thahab.com/cdn/shop/files/appstore_120x.png?v=1733916214" />
+                  <Image src="https://thahab.com/cdn/shop/files/appstore_120x.png?v=1733916214" alt="App Store" width={120} height={120} />
                 </a>
                 <a
                   href="https://thahab.com/cdn/shop/files/gplay_d7d984a9-2c97-47b9-819b-81c38bcac265_120x.png?v=1733917218"
                   target="_blank"
                 >
-                  <img src="https://thahab.com/cdn/shop/files/gplay_d7d984a9-2c97-47b9-819b-81c38bcac265_120x.png?v=1733917218" />
+                  <Image src="https://thahab.com/cdn/shop/files/gplay_d7d984a9-2c97-47b9-819b-81c38bcac265_120x.png?v=1733917218" alt="Google Play" width={120} height={120} />
                 </a>
               </div>
             </ul>
