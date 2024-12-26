@@ -11,30 +11,29 @@ import { getCategoryProducts } from "@/app/redux-system/slices/categoryProductsS
 // import { useSearchParams } from 'next/navigation';
 
 export default function Home({ params }) {
-
   console.log(params.categoryname);
-
 
   const {categoryDataProducts} = useSelector(state => state.categoryProductsData);
   // console.log(categoryDataProducts?.productsList);
   console.log(categoryDataProducts);
-  
 
-  
   const [pageHeight, setPageHeight] = useState(null);
-
-  window.addEventListener("scroll", () => {
-    setPageHeight(window.scrollY);
-    // console.log(pageHeight); 
-  });
-
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setPageHeight(window.scrollY);
+      // console.log(pageHeight); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     dispatch(getCategoryProducts(params.categoryname));
 
-  },[])
-
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [dispatch, params.categoryname]);
 
   return (
     <div className="mt-[12em] w-full flex flex-col mb-[2em]">
@@ -47,6 +46,5 @@ export default function Home({ params }) {
       <hr className="w-full mt-4"/>
       <RecentlyViewed/>
     </div>
- 
   );
 }
