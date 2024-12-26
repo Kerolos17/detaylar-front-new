@@ -15,11 +15,9 @@ import Link from "next/link";
 import HomeMen from "./components/HomeMen";
 import SliderHome from "./components/homeComponents/SliderHome";
 
-const page = () => {
+const PageComponent = () => {
   const searchParams = useSearchParams();
   const gender = searchParams.get("gender");
-
-  // console.log(gender);
 
   return (
     <div className="mt-[15em]">
@@ -77,4 +75,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default PageComponent;
