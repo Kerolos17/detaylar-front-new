@@ -25,7 +25,7 @@ const PageComponent = () => {
       {gender === "WOMEN" ? (
         <div className="w-full">
           <Banner />
-          <div className="px-[4em] flex flex-col gap-4 lg:flex-row justify-cneter items-center mt-[1em]">
+          <div className="px-[4em] flex flex-col gap-4 lg:flex-row justify-center items-center mt-[1em]">
             {/* left side -  shop now */}
             <div className="flex flex-col w-full lg:w-1/3 justify-center items-center gap-3">
               <h1 className="text-xl tracking-[.2em]">NEW IN</h1>
@@ -48,7 +48,7 @@ const PageComponent = () => {
 
           <hr className="w-full mt-[1em]" />
 
-          <div className="px-[4em] flex flex-col gap-4 lg:flex-row justify-cneter items-center mt-[2em]">
+          <div className="px-[4em] flex flex-col gap-4 lg:flex-row justify-center items-center mt-[2em]">
             {/* left side -  shop now */}
             <div className="flex flex-col lg:w-1/3 w-full justify-center items-center gap-3">
               <h1 className="text-xl tracking-[.2em]">HERE TO DAZZLE</h1>

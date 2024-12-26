@@ -1,5 +1,13 @@
 import React from "react";
-
+import SecondTwoCards from "./homeComponents/SecondTwoCards";
+import ThreeCards from "./homeComponents/ThreeCards";
+import GitTheLook from "./homeComponents/GitTheLook";
+import GiftCard from "./homeComponents/GiftCard";
+import Aboutus from "./homeComponents/Aboutus";
+import { Button } from "@material-tailwind/react";
+import Banner from "./homeComponents/Banner";
+import ImagesSlider from "./homeComponents/ImagesSlider";
+import TwoCards from "./homeComponents/TwoCards";
 const HomeWomen = () => {
   return (
     <div className="w-full mt-[15em]">
