@@ -44,7 +44,7 @@ const ChatModal = () => {
           {/* الرسالة */}
           <div className="p-4">
             <div className="bg-gray-200 p-2 rounded-lg mb-4">
-              Welcome to our chat! Let us know what you're looking for.
+              Welcome to our chat! Let us know what you&apos;re looking for.
             </div>
 
             <p>Here&apos;s the message content.</p>
